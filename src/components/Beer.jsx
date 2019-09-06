@@ -3,8 +3,13 @@ import PropTypes from 'prop-types';
 import rainierBeer from '../assets/images/rainierbeer.png'
 
 function Beer(props){
+  var beerComponentStyles = {
+    backgroundColor: '#ecf0f1',
+    fontFamily: 'sans-serif',
+    color: 'red'
+  }
   return (
-    <div>
+    <div style = {beerComponentStyles}>
       <h3>Beer name: {props.name}</h3>
       <h3>Beer brand: {props.brand}</h3>
       <h3>Beer price: ${props.price}</h3>
