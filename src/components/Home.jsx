@@ -1,6 +1,6 @@
 import React from 'react';
 import home from '../assets/images/home.jpg';
-import './Home.css';
+
 
 
 

@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import rainierBeer from '../assets/images/rainierbeer.png';
+
 
 function Beer(props){
   var beerComponentStyles = {
     backgroundColor: '#ecf0f1',
     fontFamily: 'sans-serif',
-    color: 'red'
+    color: 'red',
   }
   return (
     <div style = {beerComponentStyles}>
@@ -14,7 +14,14 @@ function Beer(props){
       <h3>Beer brand: {props.brand}</h3>
       <h3>Beer price: ${props.price}</h3>
       <h3>Alcohol Content: {props.alcoholContent}%</h3>
-      <img src={props.pic}/>
+      <img className='tap-pic'src={props.pic}/>
+        <style jsx>{`
+            .tap-pic {
+              display: block;
+              height: 20%;
+              width: 20%
+            }
+            `}</style>
     </div>
   );
 }
