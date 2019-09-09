@@ -31,7 +31,7 @@ function Header(){
             }
             `}</style>
           <div className="link-bar">
-          <Link to ="/">HOME</Link> | <Link to="/newbeer">ADD A BEER</Link> | <Link to="/aboutUs"> ABOUT US</Link> | <Link to="/tapList"> LIVE TAP LIST</Link> | <Link to="/events"> UPCOMING EVENTS</Link> | <Link to="/recommend"> RECOMMEND!</Link> | <Link to="/kegSales"> KEG SALES</Link>
+          <Link to ="/">HOME</Link> | <Link to="/newbeer">ADD A BEER</Link> | <Link to="/aboutUs"> ABOUT US</Link> | <Link to="/taplist"> LIVE TAP LIST</Link> | <Link to="/events"> UPCOMING EVENTS</Link> | <Link to="/recommend"> RECOMMEND!</Link> | <Link to="/kegSales"> KEG SALES</Link>
             <style jsx>{`
                 .link-bar {
                   text-align: center;
