@@ -1,7 +1,33 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Chill N Fill Site Rebuild
+Taking a stab at rebuilding the site of my favorite Portland bar. [Inspiration](http://chillnfill.com/)
+
 ## Component Map
 <img src="/src/assets/images/componentTree.png">
+
+## Setup/Installation Requirements
+
+* _Clone the repo_
+* _$ git clone https://github.com/NickRamsey6/tap-room_
+* _NPM Install_
+* _NPM Run Start_
+
+## Known Bugs
+
+* _n/a_
+
+## Support and contact details
+
+_Email nramseysc@gmail.com with any questions, comments, or concerns!_
+
+## Technologies Used
+
+_Built with webpack, javascript, eslinter and babel_
+
+### License
+
+Copyright (c) 2019 **_Nick Ramsey_**
 
 ## Available Scripts
 
