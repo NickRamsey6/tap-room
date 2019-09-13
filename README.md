@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Taking a stab at rebuilding the site of my favorite Portland bar. [Inspiration](http://chillnfill.com/)
 
 ## Component Map
-<img src="/src/assets/images/componentTree.png">
+<img src="/src/assets/images/componentTreeWithState.png">
 
 ## Setup/Installation Requirements
 
