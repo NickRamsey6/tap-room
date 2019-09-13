@@ -6,18 +6,35 @@ import Error404 from './Error404';
 import NewBeerForm from './NewBeerForm';
 import Home from './Home';
 
-function App(){
-  return (
-    <div>
-      <Header/>
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/taplist' component={BeerList} />
-        <Route path='/newbeer' component={NewBeerForm} />
-        <Route component={Error404} />
-      </Switch>
-    </div>
-  );
-}
 
+class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      masterBeerList: []
+    };
+    this.handleAddingNewBeerToList = this.handleAddingNewBeerToList.bind(this);``
+  }
+
+  handleAddingNewBeerToList(newBeer) {
+    let newMasterBeerList = this.state.masterBeerList.slice();
+    newMasterBeerList.push(newBeer);
+    this.setState({masterBeerList: newMasterBeerList});
+  }
+
+  render(){
+    return (
+      <div>
+        <Header/>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/taplist' render={()=><BeerList beerList={this.state.masterBeerList} />} />
+          <Route path='/newbeer' render={()=><NewBeerForm onNewBeerCreation={this.handleAddingNewBeerToList} />} />
+          <Route component={Error404} />
+        </Switch>
+      </div>
+    );
+  }
+}
 export default App;
