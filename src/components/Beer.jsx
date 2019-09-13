@@ -6,7 +6,7 @@ function Beer(props){
   var beerComponentStyles = {
     backgroundColor: '#ecf0f1',
     fontFamily: 'sans-serif',
-    color: 'red',
+    color: 'black',
   }
   return (
     <div style = {beerComponentStyles}>
