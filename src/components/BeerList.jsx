@@ -3,6 +3,7 @@ import Beer from './Beer';
 import rainierBeer from '../assets/images/rainierbeer.png';
 import nattySL from '../assets/images/nattySL.png';
 import lombardLager from '../assets/images/lombardLager.jpg';
+import PropTypes from 'prop-types';
 
 var masterBeerList = [
   {
@@ -28,11 +29,11 @@ var masterBeerList = [
   },
 ];
 
-function BeerList(){
+function BeerList(props){
   return (
     <div>
       <hr />
-      {masterBeerList.map((beer, index) =>
+      {props.beerList.map((beer, index) =>
         <Beer name = {beer.name}
           brand = {beer.brand}
           price = {beer.price}
@@ -43,5 +44,9 @@ function BeerList(){
     </div>
   );
 }
+
+BeerList.propTypes = {
+  beerList: PropTypes.array,
+};
 
 export default BeerList;
