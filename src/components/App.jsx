@@ -5,6 +5,9 @@ import { Switch, Route } from 'react-router-dom';
 import Error404 from './Error404';
 import NewBeerForm from './NewBeerForm';
 import Home from './Home';
+import rainierBeer from '../assets/images/rainierbeer.png';
+import nattySL from '../assets/images/nattySL.png';
+import lombardLager from '../assets/images/lombardLager.jpg';
 
 
 class App extends React.Component {
@@ -12,7 +15,29 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      masterBeerList: []
+      masterBeerList: [
+        {
+          name: 'Rainier',
+          brand: 'Rainier',
+          price: 3,
+          alcoholContent: 3,
+          pic: rainierBeer
+        },
+        {
+          name: 'Natty Light Strawberry Lemonade',
+          brand: 'Natural Light',
+          price: 4,
+          alcoholContent: 4,
+          pic: nattySL
+        },
+        {
+          name: 'Lombard Lager',
+          brand: 'Asher David Brewing',
+          price: 2,
+          alcoholContent: 5,
+          pic: lombardLager
+        },
+      ]
     };
     this.handleAddingNewBeerToList = this.handleAddingNewBeerToList.bind(this);
   }
