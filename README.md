@@ -5,6 +5,7 @@ Taking a stab at rebuilding the site of my favorite Portland bar. [Inspiration](
 
 ## Component Map
 <img src="/src/assets/images/componentTreeWithState.png">
+State lives in app component and is passed down to new beer form and beer list.
 
 ## Setup/Installation Requirements
 
